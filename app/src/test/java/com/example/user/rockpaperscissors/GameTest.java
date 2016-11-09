@@ -39,32 +39,9 @@ public class GameTest {
         assertEquals(3, TestMoves.size());
     }
 
-//
-//    @Test
-//    public void getAnswerTest() {
-//        Answers answers = new Answers(testAnswers);
-//
-//        String answer = answers.getAnswer();
-//
-//        System.out.println("The answer is... " + answer);
-//        assertNotNull(answer);
-//    }
-//
-//
-//    @Test
-//    public void addTest() {
-//        Answers answers = new Answers();
-//
-//        int originalNumberOfAnswers = answers.getLength();
-//        answers.add("Yes");
-//
-//        assertEquals(originalNumberOfAnswers + 1, answers.getLength());
-//    }
-//}
-
-
-
-
-
-
+    @Test
+    public void gameBeingPlayed(){
+        Game game = new Game ("Rock");
+        assertEquals("YOU WIN!", game.playGame("Rock"));
+    }
 }
